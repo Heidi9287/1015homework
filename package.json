@@ -1,0 +1,19 @@
+{
+  "name": "1015homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heidi9287/1015homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heidi9287/1015homework/issues"
+  },
+  "homepage": "https://github.com/Heidi9287/1015homework#readme"
+}
