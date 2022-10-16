@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app";
+const dummyData = [
+  { todoName: "Dye your hair a fall color", id: "1" },
+  { todoName: "Drink Pumpkin Spice Latte", id: "2" },
+  {
+    todoName: "Buy fall candels",
+    id: "3",
+  },
+  { todoName: "Leaf peaking in Upstate", id: "4" },
+  { todoName: "Instagram dead leaves on the ground", id: "5" },
+  { todoName: "Learn React.js", id: "6" },
+];
+const Main = () => {
+  const [todos, setToDos] = useState(dummyData);
+  return <App todos={todos} />;
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("main"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Main />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
